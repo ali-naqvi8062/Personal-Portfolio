@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 
 * {
   margin: 0;
@@ -30,5 +31,32 @@ nav, .nav-links {
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 17vh; /* Based on the "view height" */
+}
+
+.nav-links {
+  gap: 2rem; /* between elements that are "flexed" */
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181,181,181); /* for the color of the underline on the nav bar */
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
 }
